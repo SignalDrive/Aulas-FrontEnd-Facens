@@ -569,7 +569,61 @@ code {
         }
  }
 
- /* inicio terceira pagina medias */
+ /* inicio terceira pagina: mídias */
  /* conteudo a ser construido conforme as instrucoes via canvas */
+
+    .hero-midias{
+        background: #0f3460;
+        padding: 4rem 2rem;
+        text-align: center;
+        color: white;
+
+    }
+
+    .grade-midias,
+    .bloco-midia,
+    .bloco-midia-largo{
+        display: grid;
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        color: white;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    audio{
+        width: 100%;
+        border-radius: 12px;
+        margin:0.75rem 0;
+        display: block;
+    }
+
+    video,
+    .video-embed,
+    iframe{
+        width: 100%;
+        border-radius: 12px;
+        margin:0.75rem 0;
+        display: block;
+    }
+
+    .bloco-codigo {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 1rem;
+        font-family: 'Consolas', monospace;
+        color: #fff;
+        text-align: left;
+        overflow-x: auto;
+    }
+    .nota-midia {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 0.5rem;
+    }
+
  /* aplicar script JS para gerar as demais paginas HTML5 > pagina 2 e 3 */
  /* nome: Alexander Fernandes  RA: 251070 | 05/05/2026  */
