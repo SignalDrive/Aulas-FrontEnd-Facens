@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <style>
+    h1 {
+        background: #0b72b9;
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        max-width: 700px;
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplo 04 - Clique neste título</h1>
+<p>O evento de clique está sendo monitorado com addEventListener.</p>
+    
+<script>
+    let titulo = document.querySelector('h1');
+    titulo.addEventListener('click', () => {
+    window.alert('Pare de clicar no título!');
+});
+</script>
+</body>
+</html>

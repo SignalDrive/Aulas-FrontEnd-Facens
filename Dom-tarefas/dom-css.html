@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo-03 alterando css</title>
+    <style>
+    .azul {
+        color: white;
+        background-color: #0b72b9;
+        padding: 16px;
+        border-radius: 10px;
+        border-bottom: 5px solid #063b63;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo-03 alterando css</h1>
+    
+    <button class="botao-inline" onclick="alterarEstiloDireto()">
+    Alterar estilo direto inline
+</button>
+
+<button onclick="aplicarClasse()">
+    Aplicar classe azul
+</button>
+
+<button class="botao-limpar" onclick="removerInline()">
+    Remover apenas inline
+</button>
+
+<button onclick="removerTudo()">
+    Remover tudo
+</button>
+
+<script>
+    let titulo = document.querySelector('h1');
+
+    function alterarEstiloDireto() {
+    titulo.style.color = 'red';
+    titulo.style.backgroundColor = '#000';
+    titulo.style.padding = '16px';
+    titulo.style.borderBottom = 'solid 4px red';
+ }
+ function aplicarClasse() {
+    titulo.setAttribute('class', 'azul');
+}
+function removerInline() {
+    titulo.removeAttribute('style');
+}
+function removerTudo() {
+    titulo.removeAttribute('class');
+    titulo.removeAttribute('style');
+}
+</script>
+
+
+    
+</body>
+</html>
